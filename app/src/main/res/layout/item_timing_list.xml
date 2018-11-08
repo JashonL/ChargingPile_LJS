@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/xa1"
+    android:background="@color/headerView"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/xa120"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/xa35"
+        android:paddingRight="@dimen/xa22">
+
+        <LinearLayout
+            android:id="@+id/llStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m183开启"
+                android:textColor="@color/title_1"
+                android:textSize="@dimen/xa30"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:textColor="@color/title_1"
+                android:textSize="@dimen/xa30"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llStart"
+            android:layout_marginTop="@dimen/xa24"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m184关闭"
+                android:textColor="@color/title_1"
+                android:textSize="@dimen/xa30"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_stop_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:textColor="@color/title_1"
+                android:textSize="@dimen/xa30"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/title_3"
+            android:textSize="@dimen/xa30" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/xa20"
+            android:layout_toLeftOf="@+id/rl_every_day"
+            android:text="@string/m186每天"
+            android:textColor="@color/blue_1"
+            android:textSize="@dimen/xa30" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_every_day"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rl_switch">
+
+            <ImageView
+                android:id="@+id/iv_everyday"
+                android:layout_width="@dimen/xa40"
+                android:layout_height="@dimen/xa40"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/xa20"
+                android:background="@drawable/selector_checkbox_bg_white" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_switch"
+                android:layout_width="@dimen/xa80"
+                android:layout_height="@dimen/xa40"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_checkbox_on_off" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
